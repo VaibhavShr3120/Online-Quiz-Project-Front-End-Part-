@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <script>
+        function validate() {
+            var
+                username = document.getElementById("Name").value;
+            var enrol = document.getElementById("enrol").value;
+            var mob = document.getElementById("mob").value;
+            var em = document.getElementById("em").value;
+            if (username == null || username == "") {
+                alert("Please enter the username");
+                return false;
+            }
+            if (enrol == null || enrol == "") {
+                alert("Please enter the Enrollment Number");
+                return false;
+            }
+            if (mob == null || mob == "") {
+                alert("Please enter the Mobile Number");
+                return false;
+            }
+            if (em == null || em == "") {
+                alert("Please enter the EmailId");
+                return false;
+            }
+            else {
+                var url='test.html';
+                window.open(url,'-blank');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" class="form">
+        <h1>Enter Your Details For The Test</h1>
+        <label for="Name">Enter your name:-
+            <input type="text" id="Name" placeholder="Name">
+        </label>
+        <label for="enrol">Enter your Enrollment Number:-
+            <input type="text" id="enrol" placeholder="Enrollment Number">
+        </label>
+        <label for="mob">Enter Your Mobile Number:-
+            <input type="tel" id="mob" placeholder="Mobile Number">
+        </label>
+        <label for="em">Enter Your Email Id:-
+            <input type="email" id="em" placeholder="Email Id">
+        </label>
+        <label for="">
+            <button type="submit" onclick="validate()">Start Test</button>
+        </label>
+    </form>
+</body>
+
+</html>

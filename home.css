@@ -1,0 +1,66 @@
+body {
+    background-color: #FCC8B2;
+}
+
+.form {
+    background-color: #f8b294;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: grid;
+    text-align: center;
+    width: 50%;
+    margin: 5% auto;
+}
+
+.form h1 {
+    font-size: 25px;
+    text-align: center;
+    font-family: cursive;
+    color: crimson;
+}
+
+.form label {
+    font-size: 19px;
+    font-weight: bolder;
+    font-family: cursive;
+    /*border: 2px solid blue;*/
+    padding: 5px;
+    margin: 5px;
+}
+
+.form input {
+    font-size: 19px;
+    width: 48%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.form ::placeholder {
+    font-family: cursive;
+    color: black;
+    opacity: 10;
+}
+
+.form button {
+    background-color: transparent;
+    display: block;
+    font-size: 20px;
+    width: 25%;
+    height: 100%;
+    margin: auto;
+    transition: 0.1s;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.form button:hover {
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.form button a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 15px;
+}
